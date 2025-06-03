@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Shopping Cart Suite" parallel="classes" thread-count="2">
+    <parameter name="browser" value="chroMe"/>
+    <test name="Shopping Cart Tests Chrome">
+        <classes>
+            <class name="test.ui.AddItemToCartTest"/>
+        </classes>
+    </test>
+    <parameter name="browser" value="edGe"/>
+    <test name="Shopping Cart Tests Edge">
+        <classes>
+            <class name="test.ui.AddItemToCartTest"/>
+        </classes>
+    </test>
+</suite>
